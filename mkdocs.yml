@@ -1,0 +1,28 @@
+site_name: My Docs
+site_image: 'images/logo.png'
+site_favicon: 'images/favicon.ico'
+docs_dir: docs_src
+site_dir: docs
+site_description: A simple documentation site
+site_author: Carlos Miguel
+site_url: https://temeriamos.github.io/Actividad_MKDocs_Pandoc.git
+nav:
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
+  - PDF: pdf.md
+theme: material
+plugins:
+  - search
+  - pdf-export
+  - with-pdf:
+      author: 'Temeriamos'
+      copyright: '2022'
+      cover: true
+      back_cover: true
+      cover_title: 'My Docs'
+      cover_subtitle: 'Manual de usuario'
+      toc_title: 'Contenido'
+      toc_levels: 2
+      ordered_chapters_level: 2
+      output_path: pdf/documentacionCompleta.pdf
